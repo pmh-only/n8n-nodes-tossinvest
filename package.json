@@ -1,0 +1,45 @@
+{
+  "name": "n8n-nodes-tossinvest",
+  "version": "0.1.0",
+  "description": "n8n community nodes for the Toss Securities Open API.",
+  "license": "MIT",
+  "homepage": "https://github.com/pmh-only/n8n-nodes-tossinvest#readme",
+  "author": { "name": "pmh-only" },
+  "keywords": [
+    "n8n-community-node-package",
+    "n8n",
+    "tossinvest",
+    "toss-securities",
+    "openapi"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pmh-only/n8n-nodes-tossinvest.git"
+  },
+  "scripts": {
+    "build": "n8n-node build",
+    "build:watch": "tsc --watch",
+    "dev": "n8n-node dev",
+    "lint": "n8n-node lint",
+    "lint:fix": "n8n-node lint --fix",
+    "release": "n8n-node release",
+    "prepublishOnly": "n8n-node prerelease"
+  },
+  "files": ["dist"],
+  "packageManager": "pnpm@11.5.1",
+  "publishConfig": { "access": "public", "provenance": true },
+  "n8n": {
+    "n8nNodesApiVersion": 1,
+    "strict": true,
+    "credentials": ["dist/credentials/TossInvestApi.credentials.js"],
+    "nodes": ["dist/nodes/TossInvest/TossInvest.node.js"]
+  },
+  "devDependencies": {
+    "@n8n/node-cli": "^0.23.0",
+    "eslint": "9.39.4",
+    "prettier": "3.8.3",
+    "release-it": "20.2.0",
+    "typescript": "5.9.3"
+  },
+  "peerDependencies": { "n8n-workflow": "*" }
+}
