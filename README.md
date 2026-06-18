@@ -45,7 +45,7 @@ client_secret=...
 
 ## Documentation
 
-- Toss Open API LLM entry point: https://developers.tossinvest.com/llms.txt
+- Toss Open API docs: https://developers.tossinvest.com/docs
 - API base URL: https://openapi.tossinvest.com
 - n8n community node build docs: https://docs.n8n.io/integrations/community-nodes/build-community-nodes/
 

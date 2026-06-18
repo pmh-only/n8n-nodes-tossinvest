@@ -7,7 +7,7 @@ export class TossInvestApi implements ICredentialType {
 
 	icon: Icon = 'file:../nodes/TossInvest/tossinvest.svg';
 
-	documentationUrl = 'https://developers.tossinvest.com/llms.txt';
+	documentationUrl = 'https://developers.tossinvest.com/docs';
 
 	properties: INodeProperties[] = [
 		{
